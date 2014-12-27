@@ -15,7 +15,10 @@ body {
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -29,10 +32,13 @@ body {
     font-size: 8em;
     font-weight: 300;
 }
+
 .text-vertical-center h3 {
      font-weight: 300;
      margin: -20px 0px 0px 0px;
 }
+
+
 /* Custom Button Styles */
 
 .btn-dark {
@@ -67,92 +73,14 @@ hr.small {
     max-width: 100px;
     color:#00796B;
 }
-
-/* Side Menu */
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    margin-right: -250px;
-    overflow-y: auto;
-    background: #222;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
+/*blog text */
+blogtitle{
+    color: #00796b;
+    font-weight: 400;
 }
-
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+blogtitle:hover{
+    color: #000;
 }
-
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #999;
-}
-
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
-}
-
-#menu-toggle {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    right: 0;
-}
-
-#sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -ms-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-}
-
-.toggle {
-    margin: 5px 5px 0 0;
-}
-
 /* Header */
 
 .header {
@@ -181,8 +109,12 @@ hr.small {
 }
 .about a{
     color:#00796B;
-
 }
+.about p{
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
 /* Quote */
 .quote{
     background: url(../img/135H.jpg) 50% 0 fixed; 
@@ -202,9 +134,13 @@ hr.small {
     padding: 50px 0;
 }
 
-.service-item {
+.service-item-left{
     margin-bottom: 50px;
     margin-right: 30px;
+}
+
+.service-item-right{
+    margin-bottom: 50px;
     margin-left: 30px;
 }
 .service-item p{
@@ -212,6 +148,7 @@ hr.small {
     font-weight: 300;
     font-size: 16px;
 }
+
 .service-item h4{
     font-weight: 400;
     font-size: 20px;
@@ -221,7 +158,7 @@ hr.small {
         border: 10px solid #00796B;
         max-width: 200px;
         display: inline-block;
-        margin: auto;
+
 
     }
 
@@ -249,7 +186,9 @@ hr.small {
     margin-bottom: 30px;
 
 }
-
+.portfolio ul{
+    font-size: 1.3em;
+}
 .img-portfolio {
     margin: 0 auto;
 }
@@ -280,6 +219,7 @@ hr.small {
 thin {
     font-weight: 300;
 }
+
 teal{
     color:#00796B;
 }
@@ -293,7 +233,7 @@ right{
     color:#FFFFFF;
 }
 /* figure */
-figure{
+figure {
     position: relative;
     overflow: hidden;
    margin-left: 20%;
@@ -344,3 +284,63 @@ figure.effect:hover img {
 figure.effect:hover i:hover{
     opacity: 1;
     color: #FFFFFF;
+}
+
+/*mobile stuff*/
+@media (max-width:480px){
+    .text-vertical-center t {
+
+        color: white;
+        padding: 0;
+        font-size: 6em;
+        font-weight: 300;
+    }
+    .text-vertical-center h3 {
+        font-size: 1.5em;
+         font-weight: 300;
+         margin: -20px 0px 0px 0px;
+    }
+    .service-item-left{
+        margin-bottom: 50px;
+        margin-right: 30px;
+         margin-left: 30px;
+    }
+
+    .service-item-right{
+        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .portfolio h3{
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+    .portfolio ul{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 1.8em;
+    }
+    
+}
+@media ( max-width:770px) and ( min-width: 480px){
+    .service-item-left{
+        margin-bottom: 50px;
+        margin-right: 30px;
+         margin-left: 30px;
+    }
+
+    .service-item-right{
+        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .portfolio h3{
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+    .portfolio ul{
+        font-size: 1.2em;
+    }
+
+}

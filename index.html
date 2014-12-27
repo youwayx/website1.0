@@ -32,7 +32,7 @@
 
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container col-md-10 col-md-offset-1 col-lg-6 col-centered">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,6 +46,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+<!--
+                    <li>
+                        <a href = "blog/index.html"><blogtitle>Blog</blogtitle></a>
+                    </li>
+-->
                     <li>
                         <a href="#about">About Me</a>
                     </li>
@@ -72,7 +77,7 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <t>Yuwei Xu</thin></t>
-            <h3>Computer Science | University of Waterloo</h3>
+            <h3>Software Developer | University of Waterloo</h3>
             <br>
         </div>
     </header>
@@ -81,11 +86,13 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>A Bit About Me </h2>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+                    <h2 class="text-center">A Bit About Me </h2>
                     <hr class="small" >
-                    <p class="lead">Hey there! I'm Yuwei Xu and I'm currently studying Computer Science at the University of Waterloo. I have a passion for both software development and finance and aspire to start a tech company or become a full-time trader. </p>
+                    <p >Hey there, I'm Yuwei and I'm currently studying Computer Science at the University of Waterloo. Beginning in high school, I discovered that I have a passion for software development and finance. I aspire to start a company that combines the two in a meaningful and impactful way. <br> <br>Some other things I like include design, typography, fashion, good food, and browsing Quora.<br><br></p>
+                    <div class = "text-center"> 
                     <img src = "img/profile2.png" id = "profile-pic">
+                        </div>
                     <!-- <p style="margin:20px 0px 0px 0px"> Resume </p> -->
                 </div>
             </div>
@@ -100,12 +107,12 @@
     <section id="services" class="projects">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-md-12 col-lg-10 col-lg-offset-1">
                     <h2><teal>My Projects</teal></h2>
                     <hr class="small" >
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="service-item">
+                            <div class="service-item service-item-left">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-cloud fa-stack-1x text-primary"></i>
@@ -118,7 +125,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <div class="service-item">
+                            <div class="service-item service-item-right">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-compass fa-stack-1x text-primary"></i>
@@ -133,8 +140,8 @@
                     </div>    
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="service-item">
-                                <figure class = "effect">
+                            <div class="service-item service-item-left">
+                                <figure class = "effect" >
                                     <img src = "img/fxnews.png">
                                     <figcaption>
                                         <a href="https://play.google.com/store/apps/details?id=com.yuweixu.fxnews"> <i class="fa fa-play-circle fa-fw fa-3x icon-white" ></i></a>
@@ -151,7 +158,7 @@
                     
                         
                         <div class="col-md-6 col-sm-6">
-                            <div class="service-item">
+                            <div class="service-item service-item-right">
                                 <figure class = "effect">
                                     <img src = "img/raidenx.png">
                                     <figcaption>
@@ -169,8 +176,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <div class="service-item">
-                                <figure class = "effect">
+                            <div class="service-item service-item-left" >
+                                <figure class = "effect" >
                                     <img src = "img/swarm.png">
                                     <figcaption>
                                         <!-- <a href="http://github.com/xuyuwei/Tetris-Battle"> <i class="fa fa-github fa-fw fa-3x icon-white" ></i></a> -->
@@ -181,17 +188,17 @@
                                 <h4>
                                     Swarm
                                 </h4>
-                                <p>Swarm is a copy of the game <a href = http://www.neopets.com/games/game.phtml?game_id=562> <teal>Swarm</teal></a> which is a variation of Space Invaders. Swarm is made using Java.awt and Java.swing.</p>
+                                <p id ="left">Swarm is a copy of the game <a href = http://www.neopets.com/games/game.phtml?game_id=562> <teal>Swarm</teal></a> which is a variation of Space Invaders. Swarm is made using Java.awt and Java.swing.</p>
                                 <!-- <a href="https://play.google.com/store/apps/details?id=com.yuweixu.fxnews" class="btn btn-light">Play Store</a> -->
                             </div>
                         </div>
                     
                         
                         <div class="col-md-6 col-sm-6">
-                            <div class="service-item">
-                                <figure class = "effect">
+                            <div class="service-item service-item-right" >
+                                <figure class = "effect" >
                                     <img src = "img/tetrisbattle.png">
-                                    <figcaption>
+                                    <figcaption >
                                         <a href="http://github.com/xuyuwei/Tetris-Battle"> <i class="fa fa-github fa-fw fa-3x icon-white" ></i></a>
                                     </figcaption>
                                 </figure>
@@ -199,7 +206,7 @@
                                 <h4>
                                     Tetris Battle
                                 </h4>
-                                <p>Tetris Battle is a recreation of the popular <a href = "https://apps.facebook.com/tetris_battle/"> <teal>Facebook Game</teal></a> in Python 2.7 and Pygame. A local two player mode was implemented, allowing two people to play on one keyboard. </p>
+                                <p id ="right">Tetris Battle is a recreation of the popular <a href = "https://apps.facebook.com/tetris_battle/"> <teal>Facebook Game</teal></a> in Python 2.7 and Pygame. A local two player mode was implemented, allowing two people to play on one keyboard. </p>
                             </div>
                         </div>
                     </div>
@@ -215,22 +222,22 @@
   <section id="portfolio" class="portfolio">
         <div class="container-fluid">
             <div class="row">           
-               <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+               <div class="col-centered col-lg-6 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
                     <div class="portfolio-item">
                         <h2 class="text-center"><teal>Experience & Achievements</teal></h2>
                         <hr class="small">
-                        <h3><b>Residence Council Representative</b> <right>Sept 2014 - Present</right> </h4>
-                        <ul style = "font-size: 18px">
+                        <h3><b>Residence Council Representative</b> <right>Sept 2014 - Present</right> </h3>
+                        <ul>
                             <li> Planned and organized residence-wide events as a member of the logistics committee</li>
                             <li> Increased attendance to events by advertising and informing residents</li>
                         </ul>
-                        <h3><b>Recipient of the René Descartes Scholarship</b> <right>May 2014</right> </h4>
-                        <ul style = "font-size: 18px">
+                        <h3><b>Recipient of the René Descartes Scholarship</b> <right>May 2014</right> </h3>
+                        <ul>
                             <li> One of 15 students to receive a National Mathematics Scholarship to the University of Waterloo</li>
                             <li> Awarded due to performance on Mathematics and Computing Competitions</li>
                         </ul>
-                        <h3><b>USAMO Qualifier</b> <right>April 2013</right> </h4>
-                        <ul style = "font-size: 18px">
+                        <h3><b>USAMO Qualifier</b> <right>April 2013</right> </h3>
+                        <ul >
                             <li> Participant of the United States of America Mathematics Olympiad</li>
                             <li> Students who scored in the top 270 out of 70000 on the AMC/AIME are invited to write this contest</li>
                         </ul>
