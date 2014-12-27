@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id= "navigation">
         <div class="container col-md-10 col-md-offset-1 col-lg-6 col-centered">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -337,6 +337,28 @@
        });  // end section function
     }); // close out script
     document.createElement("section");
+        
+    (function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $("#navigation").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > $(window).innerHeight()/3) {
+                $('#navigation').fadeIn();
+            } else {
+                $('#navigation').fadeOut();
+            }
+        });
+    });
+
+});
+  }(jQuery));
     </script>
 
 </body>
