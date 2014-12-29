@@ -121,18 +121,7 @@ blogtitle:hover{
     font-weight: 300;
 }
 
-/* Quote */
-.quote{
-    background: url(../img/135H.jpg) 50% 0 fixed; 
-    height: auto;  
-    margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    padding: 100px 0;
-}
-.quote h2{
-    color: #FFFFFF;
-}
+
 /* Services */
 
 .projects {
@@ -214,7 +203,24 @@ blogtitle:hover{
 }
 
 
-
+/* Quote */
+.quote{
+/*     levels are 75 150*/
+    background: url(../img/quotebackground.jpg) 50% 0 fixed no-repeat;
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    padding: 100px 0;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.quote h2{
+    color: #FFFFFF;
+    font-weight: 300;
+}
 /* Footer */
 
 .contact {
