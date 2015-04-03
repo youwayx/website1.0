@@ -1,0 +1,74 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+
+/* navbar */
+.navbar li{
+	font-weight: 300;
+}
+
+/* banner */
+.banner a{
+	margin-bottom: -3rem;
+}
+.banner-title{
+	font-size: 6rem;
+}
+.banner-subtitle{
+	font-size: 1.8rem;
+}
+.banner-img{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#macbook{
+	-webkit-transform: scale(0.9); /* Saf3.1+, Chrome */
+	-moz-transform: scale(0.9); /* FF3.5+ */
+	-ms-transform: scale(0.9); /* IE9 */
+	-o-transform: scale(0.9); /* Opera 10.5+ */
+	transform: scale(0.9);
+}
+
+/* about */
+
+.about {
+	color:#FFFFFF;
+}
+
+
+@media screen and (max-width: 600px){
+	.resume-div{
+		text-align: center;
+	}
+	.about-text{
+		text-align: center;
+	}
+
+}
+
+@media screen and (min-width: 993px){
+	.about-p{
+		font-size:1.2rem;
+	}
+
+}
+
+
+/* projects */
+
+.projects {
+	color:#616161;
+}
+
+i .fa-github{
+	color: #009688;
+}

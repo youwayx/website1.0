@@ -1,377 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Starter Template - Materialize</title>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Yuwei Xu</title>
-    <link rel="shortcut icon" href="img/icon.jpg">
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylesheet.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <!-- CSS  -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id= "navigation">
-        <div class="container col-md-10 col-md-offset-1 col-lg-6 col-centered">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Yuwei <teal>Xu</teal></b></a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-<!--
-                    <li>
-                        <a href = "blog/index.html"><blogtitle>Blog</blogtitle></a>
-                    </li>
--->
-                    <li>
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#services">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Experience</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+  <nav class="teal navbar" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">YX</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+  <div class="section banner teal" id="banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center white-text thin banner-title">Hey, I'm Yuwei Xu</h1>
+      <h5 class="header col s12 light white-text banner-subtitle center">and I'm an asipiring entrepreneur and developer</h5>
+      <div class = "banner-img row center">
+        <img id="macbook" src = "img/macbook.png"></img>
+      </div>
+      <div class = "center">
+        <a class="btn-floating btn-large waves-effect waves-light white"><i class="mdi-navigation-expand-more grey-text"></i></a>
+      </div>
+    </div>
+  </div>
 
 
-    
+<div class="section about orange lighten-2">
+  <div class = "container">
+    <br>
+    <br>
+    <br>
+    <h4 class="light center">About Me</h4>
+    <!--   Icon Section   -->
+    <br>
+    <br>
+    <div class="row">
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <t>Yuwei Xu</thin></t>
-            <h3>Aspiring Entrepreneur | Software Developer</h3>
-            <br>
-        </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-                    <h2 class="text-center">A Bit About Me </h2>
-                    <hr class="small" >
-                    <p >Hey there, I'm Yuwei and I'm currently studying Computer Science at the University of Waterloo. Beginning in high school, I discovered that I have a passion for software development and finance. I aspire to start a company that combines the two in a meaningful and impactful way. <br> <br>Some other things I like include design, typography, fashion, good food, and browsing Quora.<br><br></p>
-                    <div class = "text-center"> 
-                        <img src = "img/betterprofile.jpg" id = "profile-pic">
-                    </div>
-                    <h4 class="text-center"> <br>My <a href = "resume.pdf">R&#233;sum&#233;</a> </h4>
-                    <!-- <p style="margin:20px 0px 0px 0px"> Resume </p> -->
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="projects">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12 col-lg-10 col-lg-offset-1">
-                    <h2><teal>My Projects</teal></h2>
-                    <hr class="small" >
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="service-item service-item-left">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    Sonata
-                                </h4>
-                                <p>Sonata is an elegant android application that allows users to listen and create playlists of songs from YouTube. Sonata is a multitasking app, allowing the user to listen while using other apps. Winning hack in a <a href="http://velocity.uwaterloo.ca/"><teal>Velocity</teal></a> sponsored hackathon.</p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="service-item service-item-right">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    Find
-                                </h4>
-                                <p>Find is an Android application that allows a user to locate his/her friends by entering their unique Find IDs. Find is a great way for a group of friends to locate each other when in an unfamiliar setting.</p>
-                                <a href="https://github.com/xuyuwei/Find" class="btn btn-light">Github</a>
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="service-item service-item-left">
-                                <figure class = "effect" >
-                                    <img src = "img/fxnews.png">
-                                    <figcaption>
-                                        <a href="https://play.google.com/store/apps/details?id=com.yuweixu.fxnews"> <i class="fa fa-play-circle fa-fw fa-3x icon-white" ></i></a>
-                                    </figcaption>
-                                </figure>
-                                
-                            </span>
-                                <h4>
-                                    FX News
-                                </h4>
-                                <p>FX News is an Android application that displays Forex News headlines in a minimalistic interface. FX News offers necessary functionality but removes unnecessary information, making it a perfect utility for beginner and intermediate foreign exchange traders. </p>
-                            </div>
-                        </div>
-                    
-                        
-                        <div class="col-md-6 col-sm-6">
-                            <div class="service-item service-item-right">
-                                <figure class = "effect">
-                                    <img src = "img/raidenx.png">
-                                    <figcaption>
-                                        <!-- <a href="http://github.com/xuyuwei/Tetris-Battle"> <i class="fa fa-github fa-fw fa-3x icon-white" ></i></a> -->
-                                    </figcaption>
-                                </figure>
-                            </span>
-                                <h4>
-                                    Raiden X
-                                </h4>
-                                <p>Raiden X is a 2D top down shooter Java game adapted from the popular flash game <a href = "http://www.raiden-x.net/"><teal>Raiden X</teal></a>. Java.awt and Java.swing were used in the creation of this game.</p>
-                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="service-item service-item-left" >
-                                <figure class = "effect" >
-                                    <img src = "img/swarm.png">
-                                    <figcaption>
-                                        <!-- <a href="http://github.com/xuyuwei/Tetris-Battle"> <i class="fa fa-github fa-fw fa-3x icon-white" ></i></a> -->
-                                    </figcaption>
-                                </figure>
-                                
-                            </span>
-                                <h4>
-                                    Swarm
-                                </h4>
-                                <p id ="left">Swarm is a copy of the game <a href = http://www.neopets.com/games/game.phtml?game_id=562> <teal>Swarm</teal></a> which is a variation of Space Invaders. Swarm is made using Java.awt and Java.swing.</p>
-                                <!-- <a href="https://play.google.com/store/apps/details?id=com.yuweixu.fxnews" class="btn btn-light">Play Store</a> -->
-                            </div>
-                        </div>
-                    
-                        
-                        <div class="col-md-6 col-sm-6">
-                            <div class="service-item service-item-right" >
-                                <figure class = "effect" >
-                                    <img src = "img/tetrisbattle.png">
-                                    <figcaption >
-                                        <a href="http://github.com/xuyuwei/Tetris-Battle"> <i class="fa fa-github fa-fw fa-3x icon-white" ></i></a>
-                                    </figcaption>
-                                </figure>
-                            </span>
-                                <h4>
-                                    Tetris Battle
-                                </h4>
-                                <p id ="right">Tetris Battle is a recreation of the popular <a href = "https://apps.facebook.com/tetris_battle/"> <teal>Facebook Game</teal></a> in Python 2.7 and Pygame. A local two player mode was implemented, allowing two people to play on one keyboard. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-
-    <!-- Portfolio -->
-  <section id="portfolio" class="portfolio">
-        <div class="container-fluid">
-            <div class="row">           
-               <div class="col-centered col-lg-6 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 ">
-                    <div class="portfolio-item">
-                        <h2 class="text-center"><teal>Experience & Achievements</teal></h2>
-                        <hr class="small">
-                        <h3><b>Residence Council Representative</b> <right>Sept 2014 - Present</right> </h3>
-                        <ul>
-                            <li> Planned and organized residence-wide events as a member of the logistics committee</li>
-                            <li> Increased attendance to events by advertising and informing residents</li>
-                        </ul>
-                        <h3><b>Recipient of the René Descartes Scholarship</b> <right>May 2014</right> </h3>
-                        <ul>
-                            <li> One of 15 students to receive a National Mathematics Scholarship to the University of Waterloo</li>
-                            <li> Awarded due to performance on Mathematics and Computing Competitions</li>
-                        </ul>
-                        <h3><b>USAMO Qualifier</b> <right>April 2013</right> </h3>
-                        <ul >
-                            <li> Participant of the United States of America Mathematics Olympiad</li>
-                            <li> Students who scored in the top 270 out of 70000 on the AMC/AIME are invited to write this contest</li>
-                        </ul>
-                    </div>
-                </div>
-
-                
-            </div>
-
-        </div>
-
-    </section>
-
-<section id = "quote" class = "quote">
-        <div class = "container text-center">
-            <div class = "row">
-                <h2>“Don't worry about failure, you only have to be right once." - Drew Houston</h2>
-            </div>
-        </div>
-    </section>
-<section id = "contact" class = "contact">
-        <div class="container-fluid" >
-            <div class="col-sm-10 col-sm-offset-1 text-center">
-                <h3>Yuwei <teal>Xu</teal>
-                </h3>
-                <ul class="list-unstyled">
-                    <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:yuwei_xu@outlook.com"><teal>yuwei_xu@outlook.com</teal></a>
-                    </li>
-                </ul>
-                <br>
-                <ul class="list-inline" >
-                    <li>
-                        <a href="http://facebook.com/yuwei.xu.77"><i class="fa fa-facebook-square fa-fw fa-3x icon-teal"></i></a>
-                    </li>
-                    <li>
-                        <a href="http://github.com/xuyuwei"><i class="fa fa-github-square fa-fw fa-3x icon-teal" ></i></a>
-                    </li>
-                    <li>
-                        <a href="http://www.linkedin.com/pub/yuwei-xu/9a/931/6ab"><i class="fa fa-linkedin-square fa-fw fa-3x icon-teal"></i></a>
-                    </li>
-                    
-                </ul>
-                <hr class="small">
-                <p class="text-muted">Copyright &copy; Yuwei Xu 2014</p> 
-            </div>
-        </div>
-    </section>
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    $(document).ready(function(){
-   // cache the window object
-   $window = $(window);
- 
-   $('section[data-type="background"]').each(function(){
-     // declare the variable to affect the defined data-type
-     var $scroll = $(this);
-                     
-      $(window).scroll(function() {
-        // HTML5 proves useful for helping with creating JS functions!
-        // also, negative value because we're scrolling upwards                             
-        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
-         
-        // background position
-        var coords = '50% '+ yPos + 'px';
- 
-        // move the background
-        $scroll.css({ backgroundPosition: coords });    
-          }); // end window scroll
-       });  // end section function
-    }); // close out script
-    document.createElement("section");
+      <div class="col s12 m4">
+        <p class="light about-p">I’m an undergraduate student studying computer science at the University of Waterloo. I enjoy attending hackathons, browsing Quora and eating good food. This summer, I will be interning at Google. </p>
         
-    (function ($) {
-  $(document).ready(function(){
+      </div>
 
-    // hide .navbar first
-    $("#navigation").hide();
+      <div class="col s10 m4 offset-s1 center">
+        <img src="img/profile.png" class="circle responsive-img">
+      </div>
 
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
+      <div class="col s12 m4">
+        <p class="light about-p">In terms of development, I enjoy developing apps for Android and web. I also really like material and flat design. Hence the inspiration for this website.</p>
+        <div class = "resume-div">
+          <a class="waves-effect waves-light btn">My Resume</a>
+        </div>
+      </div>
 
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > $(window).innerHeight()/3) {
-                $('#navigation').fadeIn();
-            } else {
-                $('#navigation').fadeOut();
-            }
-        });
-    });
+    </div>
+      <br><br>
+      <br>      
+  </div>
+</div>
 
-});
-  }(jQuery));
-    </script>
+  <div class="section projects white">
+    <div class = "container">
+      <br>
+      <br>
+      <h4 class="light center">Projects</h4>
+      <!--   Icon Section   -->
+      <br>
+      <div class="row">
 
-</body>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/groovie.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Groovie<i class="mdi-navigation-more-vert right"></i></span>
+              <p>Android App</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Groovie<i class="mdi-navigation-close right"></i></span>
+              <p>Groovie is an Android app that uses tweets in order to provide ratings for upcoming movies. Using the AlchemyAPI, recent tweets about a specific movie are given scores in order to provide a rating. The average of all the tweets decides the movie rating.</p>
+              <div class = "center">
+                <a class="btn-floating btn-large waves-effect waves-light white center"><i class="fa fa-github" style="color:#009688;"></i></a>
+                <a class="btn-floating btn-large waves-effect waves-light white center"><i class="fa fa-share" style="color:#009688;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/groovie.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Groovie<i class="mdi-navigation-more-vert right"></i></span>
+              <p>Android App</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Groovie<i class="mdi-navigation-close right"></i></span>
+              <p>Groovie is an Android app that uses tweets in order to provide ratings for upcoming movies. Using the AlchemyAPI, recent tweets about a specific movie are given scores in order to provide a rating. The average of all the tweets decides the movie rating.</p>
+              <div class = "center">
+                <a class="btn-floating btn-large waves-effect waves-light white center"><i class="fa fa-github" style="color:#009688;"></i></a>
+                <a class="btn-floating btn-large waves-effect waves-light white center"><i class="fa fa-share" style="color:#009688;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/groovie.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Groovie<i class="mdi-navigation-more-vert right"></i></span>
+              <p>Android App</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Groovie<i class="mdi-navigation-close right"></i></span>
+              <p>Groovie is an Android app that uses tweets in order to provide ratings for upcoming movies. Using the AlchemyAPI, recent tweets about a specific movie are given scores in order to provide a rating. The average of all the tweets decides the movie rating.</p>
+              <div class = "center">
+                <a class="btn-floating btn-large waves-effect waves-light white center"><i class="fa fa-github" style="color:#009688;"></i></a>
+                <a class="btn-floating btn-large waves-effect waves-light white center"><i class="fa fa-share" style="color:#009688;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <br>
+    </div>      
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <a class="orange-text text-lighten-3" href="http://materializecss.com">Love</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
