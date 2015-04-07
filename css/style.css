@@ -6,6 +6,25 @@
  * Made By MaterializeCSS.com
  */
 
+@font-face {
+  font-family: "Karla";
+  src: url("../font/karla/Karla-Regular.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Karla";
+  src: url("../font/karla/Karla-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+.karla{
+	font-family: "Karla";
+	font-weight: 500;
+}
+
+.karla-bold{
+	font-family: "Karla";
+	font-weight: 700;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -42,6 +61,8 @@
 
 .about {
 	color:#FFFFFF;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 
@@ -65,8 +86,17 @@
 
 /* projects */
 
-.projects {
+.gallery {
 	color:#616161;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.gallery-title{
+	margin-bottom: 0.5rem;
+}
+.gallery-text{
+	font-size: 1.4rem;
 }
 
 i .fa-github{
