@@ -65,6 +65,9 @@
 	padding-bottom: 5rem;
 }
 
+.about-p{
+	font-weight: 200;
+}
 
 @media screen and (max-width: 1050px) and (min-width: 601px){
 	.banner-title{
@@ -76,7 +79,7 @@
 	}
 }
 
-@media screen and (min-width: 552px) and (max-width: 600px){
+@media screen and (max-width: 600px){
 	.banner-title{
 		font-size: 4rem;
 		margin-bottom: 0;
@@ -90,6 +93,9 @@
 	}
 	.about-text{
 		text-align: center;
+	}
+	.about-p{
+		font-weight: 300;
 	}
 
 }
