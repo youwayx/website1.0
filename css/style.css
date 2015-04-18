@@ -29,6 +29,8 @@
   padding: 0 15px;
 }
 
+
+
 /* navbar */
 .navbar li{
 	font-weight: 300;
@@ -155,6 +157,14 @@ i .fa-github{
 
 .projects-title {
 	margin-bottom: -1rem;
+}
+
+.project-pic {
+	-webkit-transform: scale(0.9); /* Saf3.1+, Chrome */
+	-moz-transform: scale(0.9); /* FF3.5+ */
+	-ms-transform: scale(0.9); /* IE9 */
+	-o-transform: scale(0.9); /* Opera 10.5+ */
+	transform: scale(0.9);
 }
 .divider{
 	margin-top: 1.5rem;

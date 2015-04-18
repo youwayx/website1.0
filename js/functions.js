@@ -1,18 +1,16 @@
-$(document).ready(function(){
-	// $('.banner-title').addClass("animated fadeIn");
-	// $('.banner-subtitle').addClass("animated fadeIn");
-
-});
-$(window).scroll(function(){
-
-	// var wScroll = $(this).scrollBottom();
-	// var op = 0;
-	if (isScrolledIntoView(".fade-area")){
-		$('.fade-area').addClass("animated fadeIn");
-	}
-	if (isScrolledIntoView(".responsive-img")){
-		$('.responsive-img').addClass("animated fadeIn");
-	}
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
 
 function isScrolledIntoView(elem)

@@ -13,7 +13,7 @@
       <li><a href="#/projects#design">Design</a></li>
       <li><a href="#/projects#connect">Contact</a></li>
     </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <a href="#/" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>	
  </nav>
 
@@ -21,14 +21,50 @@
   <div class="section">
     <div class="container">
       <div class="row">
-      	<h3 class ="col s12 l10 offset-l1 light projects-title karla-bold">Development</h3>
-      	<div class="col l10 offset-l1 divider teal"></div>
-        <img src = "img/groovie.png" class="col s12 l5 offset-l1 responsive-img karla-bold"></img>
-        <div class = "col s12 l5">
+      	<h3 class ="col xs12 s12 m12 l10 offset-l1 light projects-title karla-bold">Development</h3>
         
+
+        <div ng-repeat = "p in projects">
+          <div class="col xs12 s12 m12 l10 offset-l1 divider teal"></div>
+          <img ng-src = "{{p.image}}" class="col xs12 s12 l5 m6 offset-l1"></img>
+          <div class = "col xs12 s12 l5 m6">
+            <h4 class = "karla-bold">{{p.name}}</h3>
+            <h6 class = "karla-bold">{{p.type}} | {{p.date}}</h6>
+            <p class = "light">{{p.description}}</p>
+          </div>
         </div>
-        <div class="col l10 offset-l1 divider teal"></div>
+
+        <h3 class ="col xs12 s12 m12 l10 offset-l1 light projects-title karla-bold">Design</h3>
+        <div class="col xs12 s12 m12 l10 offset-l1 divider teal"></div>
+        <div class = "col m12 l10 offset-l1">
+          <h6>Sadly nothing here yet :(</h6>
+        </div>
+
+        
       </div>
     </div>
   </div>
 </div>
+
+<footer class="page-footer teal">
+    <div class="container footer-content"  id = "connect">
+      <div class="row">
+        <div class="col l8 s12 offset-l2 ">
+          <h4 class="white-text light center karla-bold">Connect</h4>
+          <p class="white-text about-p center">Feel free to shoot me an email or message me on the following social networks.</p>
+          <ul>
+            <li class = "white-text center light"><li class = "white-text center light"><a href="mailto:yuwei_xu@outlook.com" class = "white-text"><i class="fa fa-envelope-square fa-fw white-text"></i>Email</a></li>
+            <li class = "center light"><a href="http://facebook.com/yuwei.xu.77" class = white-text "white-text"><i class="fa fa-facebook-square fa-fw white-text"></i>Facebook</a></li>
+            <li class = "white-text center light"><a href="http://github.com/xuyuwei" class = white-text "white-text"><i class="fa fa-github-square fa-fw white-text"></i>Github</a></li>
+            <li class = "white-text center light"><a href="http://www.linkedin.com/in/yuweixu" class = white-text "white-text"><i class="fa fa-linkedin-square fa-fw white-text"></i>LinkedIn</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+        Made with <a href = "http://materializecss.com" class="orange-text text-lighten-3">Materialize</a>
+      </div>
+    </div>
+  </footer>
