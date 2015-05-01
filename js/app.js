@@ -1,7 +1,7 @@
 
 var websiteApp = angular.module('websiteApp', [
-	'ngRoute',
-	'websiteControllers'
+	'websiteControllers',
+	'ngRoute'
 ]);
 
 websiteApp.config(
@@ -19,4 +19,6 @@ websiteApp.config(
 			.otherwise({
 				redirectTo: '/'
 			});
+		$locationProvider.html5Mode(true);
+
 	});
